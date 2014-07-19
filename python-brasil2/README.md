@@ -1,4 +1,4 @@
 Python-Brasil2
 ==================
-Exercícios da Python Brasil refeitos
+Exercícios do Python Brasil refeitos:
 http://www.python.org.br/wiki/ListaDeExercicios
