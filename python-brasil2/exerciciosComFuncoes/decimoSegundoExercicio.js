@@ -8,7 +8,7 @@
  * foram digitados.
  */
 function shuffle(text) {
-  var embaralhando = text.split('').sort(function() { return 0.5 - Math.random()}).join('');
-
-  return embaralhando;
+  return text.split('').sort(function() {
+    return 0.5 - Math.random();
+  }).join('');
 }
