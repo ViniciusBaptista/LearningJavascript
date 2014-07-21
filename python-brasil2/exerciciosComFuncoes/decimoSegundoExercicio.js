@@ -7,8 +7,9 @@
  * devolvidos em caixa alta ou caixa baixa, independentemente de como 
  * foram digitados.
  */
-function shuffle(text) {
-  var embaralhando = text.split('').sort(function() { return 0.5 - Math.random()}).join('');
 
-  return embaralhando;
+function shuffle(text) {
+  return text.split('').sort(function() {
+    return 0.5 - Math.random();
+  }).join('');
 }
