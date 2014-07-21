@@ -5,6 +5,7 @@
  * item antes do imposto. A função 'altera' o valor de custo para incluir
  * o imposto sobre as vendas.
  */
+
 function somaImposto(taxaImposto, custo) {
   var taxa = custo + custo * (taxaImposto / 100);
   return 'Valor de custo com imposto: R$ ' + taxa;
