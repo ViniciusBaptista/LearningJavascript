@@ -4,16 +4,18 @@
  * "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", 
  * conforme o caso.
  */
+
 function estudar(turno) {
   var lower = turno.toLowerCase();
   
-  if (lower === 'm') {
-    return 'Bom dia!';
-  } else if (lower === 'v') {
-    return 'Boa Tarde!';
-  } else if (lower === 'n') {
-    return 'Boa Noite!';
-  } else {
-    return 'Valor Inválido';
+  switch (lower) {
+    case 'm':
+      return 'Bom dia!';
+    case 'v':
+      return 'Boa tarde!';
+    case 'n':
+      return 'Boa noite!';
+    default:
+      return 'Valor inválido';
   }
 }
