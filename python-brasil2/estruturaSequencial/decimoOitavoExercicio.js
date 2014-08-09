@@ -3,6 +3,7 @@
  * e a velocidade de um link de Internet (em Mbps), calcule e informe o
  * tempo aproximado de download do arquivo usando este link (em minutos).
  */
+ 
 function download(arquivo, velocidade) {
   var tempo = arquivo / (velocidade * 60);
   
