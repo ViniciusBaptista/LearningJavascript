@@ -5,6 +5,7 @@
  * b. a soma do triplo do primeiro com o terceiro.
  * c. o terceiro elevado ao cubo.
  */
+ 
 function calculo(a, b, c) {
   var produto = (a * 2) + (b / 2),
       soma = (a * 3) + c,
