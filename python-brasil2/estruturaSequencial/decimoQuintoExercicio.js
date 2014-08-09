@@ -18,6 +18,7 @@
  * - Sindicato ( 5%) : R$
  * = Salário Liquido : R$ 
  */
+ 
 function salario(ganhoHora, horasTrabalhadas) {
   var bruto = Math.round(horasTrabalhadas * ganhoHora),
       ir = (11 / 100) * bruto,
