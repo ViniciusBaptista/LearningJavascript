@@ -8,6 +8,7 @@
  * c. Peça o peso da pessa e informe se ela está dentro, acima 
  * ou abaixo do peso.
  */
+ 
 function pesoIdeal(altura, sexo) {
   var lower = sexo.toLowerCase();
 
