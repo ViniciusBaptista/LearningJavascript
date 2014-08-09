@@ -13,6 +13,7 @@
  * Acrescente 10% de folga e sempre arredonde os valores para cima, 
  * isto é, considere latas cheias.
  */
+ 
 function loja(area) {
   var litros = area / 6,
       qtsLatas = Math.round(litros / 18),
