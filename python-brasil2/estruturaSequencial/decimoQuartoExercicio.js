@@ -9,6 +9,7 @@
  * João deverá pagar. Caso contrário mostrar tais variáveis com o
  * conteúdo ZERO.
  */
+ 
 function pescador(quilos) {
   var pesoExcedente = 0,
       multa = 0;
