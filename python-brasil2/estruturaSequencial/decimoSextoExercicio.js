@@ -6,6 +6,7 @@
  * R$ 80,00. Informe ao usuário a quantidades de latas de tinta a serem 
  * compradas e o preço total.
  */
+ 
 function loja(area) {
   var qtsLitros = area/3,
       qtsLatas = qtsLitros / 18,
