@@ -6,14 +6,18 @@
  * A mensagem "Reprovado", se a média for menor do que sete;
  * A mensagem "Aprovado com Distinção", se a média for igual a dez
  */
+
 function notas(nota1, nota2) {
   var media = (nota1 + nota2) / 2;
 
-  if (media >= 7 && media < 10) {
-    return 'Aprovado';
-  } else if (media < 7) {
-    return 'Reprovado';
-  } else if (media === 10) {
-    return 'Aprovado com Distinção'
+  switch (true) {
+    case media >= 7 && media < 10:
+      return 'Aprovado';
+    case media < 7:
+      return 'Reprovado';
+    case media === 10:
+      return 'Aprovado com Distinção'; 
+    default:
+      return 'Nota inválida';
   }
 }
