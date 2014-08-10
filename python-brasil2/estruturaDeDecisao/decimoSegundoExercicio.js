@@ -8,25 +8,28 @@
  * deverá pedir ao usuário o valor da sua hora e a quantidade de 
  * horas trabalhadas no mês.
  */
-function pagamento(ganhoHora, hTrabalhadas) {
-  var salarioBruto = (ganhoHora * hTrabalhadas),
-      inss = salarioBruto * 0.10,
-      fgts = salarioBruto * 0.11,
-      ir = 0,
-      impostoIr;
-
+ 
+function pagamento(ganhoHora, horasTrabalhadas) {
+  var salarioBruto = (ganhoHora * horasTrabalhadas);
+      
   if (salarioBruto > 900 && salarioBruto <= 1500) {
-    ir = 0.05;
-    impostoIr = salarioBruto * ir;
+    return atribuicao(salarioBruto, 0.05);
   } else if (salarioBruto > 1500 && salarioBruto <= 2500) {
-    ir = 0.10;
-    impostoIr = salarioBruto * ir;
+    return atribuicao(salarioBruto, 0.1);
   } else if (salarioBruto > 2500) {
-    ir = 0.20;
-    impostoIr = salarioBruto * ir;
+    return atribuicaio(salarioBruto, 0.2);
   }
+}
 
-  return 'Salário Bruto: R$ ' + salarioBruto + '\n(-) IR('+ ir * 100 + '%): R$ ' + impostoIr +
-    '\n(-) INSS (10%): R$ ' + inss + '\nFGTS (11%): R$ ' + fgts +
-    '\nTotal de descontos: R$ ' + (impostoIr + inss) + '\nSalário Líquido: R$ ' + (salarioBruto - (inss + impostoIr));  
+function atribuicao(salarioBruto, ir) {
+  var inss = salarioBruto * 0.10,
+      fgts = salarioBruto * 0.11,
+      impostoDeRenda = salarioBruto * ir;
+      
+  return 'Salário Bruto: R$ ' + salarioBruto + 
+         '\n(-) IR('+ ir * 100 + '%): R$ ' + impostoDeRenda +
+         '\n(-) INSS (10%): R$ ' + inss + 
+         '\nFGTS (11%): R$ ' + fgts +
+         '\nTotal de descontos: R$ ' + (impostoDeRenda + inss) + 
+         '\nSalário Líquido: R$ ' + (salarioBruto - (inss + impostoDeRenda));
 }
