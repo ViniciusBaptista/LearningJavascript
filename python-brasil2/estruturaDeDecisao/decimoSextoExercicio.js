@@ -14,6 +14,7 @@
  * d.Se o delta for positivo, a equação possui duas raiz reais; 
  * informe-as ao usuário;
  */
+ 
 function equacao(a, b, c) {
   var delta = (Math.pow(b, 2) - (4 * a * c)),
       message,
