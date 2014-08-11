@@ -4,6 +4,7 @@
  * b. A mensagem "Reprovado", se a média for menor do que 7, com a respectiva média alcançada;
  * c. A mensagem "Aprovado com Distinção", se a média for igual a 10.
  */
+ 
 function mediaEscolar(nota1, nota2, nota3) {
   var media = (nota1 + nota2 + nota3) / 3;
 
