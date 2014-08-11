@@ -5,8 +5,8 @@
  
 function numero(inteiro) {
   var valor = inteiro
-              .toString()
-              .split('');
+    .toString()
+    .split('');
  
   switch (valor.length) {
     case 3:
