@@ -17,6 +17,6 @@ function triangulo(a, b, c) {
 
 function mensagem(triangulo, a, b, c) {
   return 'É possível formar um triangulo com ' + a + 
-         ', ' + b + ' e ' + 'c' +
+         ', ' + b + ' e ' + c +
          '.\nO triângulo formado é ' + triangulo;
 }
